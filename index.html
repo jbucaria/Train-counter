@@ -6,15 +6,17 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/6254b5bb38.js" crossorigin="anonymous"></script>
-    <title>Menu</title>
+    <title>Counter</title>
   </head>
   <body>
     <div class="container">
-      <h1>Row Counter</h1>
+      <h1>Passanger Count</h1>
       <h2 id="count-el">0</h2>
-      <button id="increment-btn" onclick="increment()">INCREMENT</button>
-      <button id="save-btn" onclick="save()">SAVE</button>
+      <button class="button1" id="increment-btn" onclick="increment()">INCREMENT</button>
+      <button class="button2" id="save-btn" onclick="save(), total()">SAVE</button>
       <p id="save-el">Previous entries:</p>
+      <p id="total-el">Total Passangers:</p>
+      <div id="message"></div>
     </div>
     <script src="index.js"></script>
   </body>
